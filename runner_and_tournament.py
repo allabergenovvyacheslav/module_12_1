@@ -37,8 +37,3 @@ class Tournament:
                     self.participants.remove(participant)
 
         return finishers
-
-if __name__ == '__main__':
-    runner_1 = Runner('Bob', 10)
-    runner_2 = Runner('Jhon', 15)
-    tour_1 = Tournament(100, runner_1, runner_2)
