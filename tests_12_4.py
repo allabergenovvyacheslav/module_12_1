@@ -32,5 +32,6 @@ class RunnerTest(unittest.TestCase):
             logging.warning('Неверный тип данных для объекта Runner', exc_info=True)
 
 
-logging.basicConfig(level=logging.INFO, filemode='w', filename='runner_tests.log',
-                    encoding='UTF-8', format='%(asctime)s | %(levelname)s | %(message)s')
+logging.basicConfig(level=logging.INFO,
+                    handlers=[logging.FileHandler('runner_tests.log', 'w', 'utf-8')],
+                    format='%(asctime)s | %(levelname)s | %(message)s')
